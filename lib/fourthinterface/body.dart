@@ -16,7 +16,7 @@ class FourthMainScreen extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Container(
-            padding: const EdgeInsets.fromLTRB(0, 62, 0, 0),
+            padding: const EdgeInsets.only(top: 62),
             width: screenwidth - 48,
             child: const Column(
               children: [

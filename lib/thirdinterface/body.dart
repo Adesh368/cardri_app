@@ -17,7 +17,7 @@ class ThirdMainScreen extends StatelessWidget {
         body: Center(
           child: SingleChildScrollView(
             child: Container(
-              padding: const EdgeInsets.fromLTRB(0, 62, 0, 0),
+              padding: const EdgeInsets.only(top: 62),
               width: screenwidth - 48,
               height: screenheight -78,
               child: const Column(

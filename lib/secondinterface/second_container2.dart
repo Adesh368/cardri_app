@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class SecondContainer2 extends StatelessWidget {
-  const SecondContainer2 ({super.key});
+  const SecondContainer2 ({super.key, required this.text, required this.text2});
+
+  final String text;
+  final String text2;
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +23,8 @@ class SecondContainer2 extends StatelessWidget {
              // mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'User ID',
+                 Text(
+                  text,
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
                 ),
                 const SizedBox(
@@ -36,9 +39,9 @@ class SecondContainer2 extends StatelessWidget {
                       color: const Color(0xfff5f5ff),
                     ),
                     child: TextFormField(
-                    decoration: const InputDecoration(
+                    decoration:  InputDecoration(
                       border: InputBorder.none,
-                      label: Text('Enter user id', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),),
+                      label: Text(text2 , style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),),
                     ),
                   ),),
                 ),

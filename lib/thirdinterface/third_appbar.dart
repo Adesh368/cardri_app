@@ -11,7 +11,8 @@ class ThirdAppBar extends StatelessWidget {
       children: [
        InkWell(
         onTap: (){
-          Navigator.of(context).pushNamed(FourthMainScreen.routname);
+          //Navigator.of(context).pushNamed(FourthMainScreen.routname);
+          Navigator.pop(context);
         },
          child: const Icon(Icons.arrow_back_sharp),
        ),

@@ -5,11 +5,15 @@ class SecondScreenAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Icon(Icons.arrow_back_sharp),
-        SizedBox(
+        InkWell(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: const Icon(Icons.arrow_back_sharp)),
+        const SizedBox(
           width: 103,
         ),
         
